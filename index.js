@@ -49,21 +49,25 @@
 // }
 // msgWithSum(sum,"Rahul");
 //==========================================================
-function login(error,msg){
-    if(error){
-        console.log("Error is: "+error)
-    }
-    else{
-        console.log(msg);
-    }
-}
+// function login(error,msg){
+//     if(error){
+//         console.log("Error is: "+error)
+//     }
+//     else{
+//         console.log(msg);
+//     }
+// }
 
-function loginHandler(username,password,clbk){
-    if(username == "Gitey001" && password == "satyanshu@786"){
-        clbk(null,"login Success")
-    }else{
-        clbk("username or password is incorrect",null)
-    }
-}
+// function loginHandler(username,password,clbk){
+//     if(username == "Gitey001" && password == "satyanshu@786"){
+//         clbk(null,"login Success")
+//     }else{
+//         clbk("username or password is incorrect",null)
+//     }
+// }
 
-loginHandler("Gitey001","satyanshu@76",login);
+// loginHandler("Gitey001","satyanshu@76",login);
+//===================================================
+console.log("one")
+setTimeout(()=>{console.log("two")},1)
+console.log("three")
