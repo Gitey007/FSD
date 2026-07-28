@@ -40,12 +40,30 @@
 // }
 // console.log("value of a out block = "+a);
 //===================================================
+// function sum(a,b){
+//          return a+b;
+// }
+// function msgWithSum(clbk,msg){
+//     const result = clbk(40,50);
+//     console.log("Hiii "+ msg+" your result is = "+result)
+// }
+// msgWithSum(sum,"Rahul");
+//==========================================================
+function login(error,msg){
+    if(error){
+        console.log("Error is: "+error)
+    }
+    else{
+        console.log(msg);
+    }
+}
 
-function sum(a,b){
-         return a+b;
+function loginHandler(username,password,clbk){
+    if(username == "Gitey001" && password == "satyanshu@786"){
+        clbk(null,"login Success")
+    }else{
+        clbk("username or password is incorrect",null)
+    }
 }
-function msgWithSum(clbk,msg){
-    const result = clbk(40,50);
-    console.log("Hiii "+ msg+" your result is = "+result)
-}
-msgWithSum(sum,"Rahul");
+
+loginHandler("Gitey001","satyanshu@76",login);
