@@ -25,4 +25,27 @@
 // (()=>{
 //     console.log("hey ..... using IIFE");
 // })();
+//===========================================
+// const a = 23
+// if(a<40){
+//     const a = 40;
+//     console.log("value of a inside block = "+a);
+// }
+// console.log("value of a out block = "+a);
+//==============================================
+// var a = 23
+// if(a<40){
+//     var a = 40;
+//     console.log("value of a inside block = "+a);
+// }
+// console.log("value of a out block = "+a);
+//===================================================
 
+function sum(a,b){
+         return a+b;
+}
+function msgWithSum(clbk,msg){
+    const result = clbk(40,50);
+    console.log("Hiii "+ msg+" your result is = "+result)
+}
+msgWithSum(sum,"Rahul");
